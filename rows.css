@@ -1,0 +1,129 @@
+body p{
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+div{
+    height: 30px;
+}
+
+
+.row1{
+    background-color: red;
+    display: flex;
+}
+.row1 div{
+    flex: 1;
+}
+.row1 div:nth-child(even){
+    background-color: blue;
+}
+
+
+.row2{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+.row2 .div1{
+    background-color: green;
+}
+.row2 .div2{
+    background-color: blue;
+}
+
+
+.row3{
+    display: flex;
+}
+.row3 .div1{
+    background-color: red;
+    width: 10%;
+}
+.row3 .div2{
+    background-color: green;
+    width: 80%;
+}
+.row3 .div3{
+    background-color: blue;
+    width: 10%;
+}
+
+
+.row4{
+    display: flex;
+}
+.row4 div{
+    flex: 1;
+    background-color: blue;
+}
+.row4 div:nth-child(odd){
+    flex-grow: 9;
+    background-color: red;
+}
+
+
+.row5{
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+.row5 .div2{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+}
+
+
+.row6{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+}
+.row6 .div2{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+
+.row7{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+.row7 .div1{
+    flex: 1;
+    background-color: red;
+}
+.row7 .div2{
+    flex: 9;
+    height: 10px;
+    background-color: green;
+}
+
+
+.row8{
+    display: flex;
+    background-color: orange;
+}
+.row8 div{
+    flex: 1;
+}
+.row8 div:nth-child(even){
+    flex: 5;
+    background-color: green;
+}
+
+
+.row9{
+    display: grid;
+    grid-template-columns: 9fr 1fr 9fr 1fr 9fr 1fr 9fr 1fr 9fr;
+}
+.row9 div{
+    background-color: orange;
+}
+.row9 div:nth-child(even){
+    background-color: green;
+}
